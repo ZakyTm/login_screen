@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:login_screen/Animation/FadeAnimation.dart';
 
 void main() {
   runApp(MyApp());
@@ -37,18 +38,19 @@ class HomePage extends StatelessWidget {
         child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               Padding(
                 padding: EdgeInsets.all(20),
-                child: const Column(
+                child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text(
-                      "Login",
-                      style: TextStyle(color: Colors.white, fontSize: 40),
-                    ),
+                    FadeAnimation(1,
+                        child: const Text(
+                          "Login",
+                          style: TextStyle(color: Colors.white, fontSize: 40),
+                        )),
                     SizedBox(height: 10),
                     Text(
                       "Welcome Back",
