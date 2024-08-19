@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:login_screen/Animation/FadeAnimation.dart';
 
 void main() {
@@ -51,10 +50,10 @@ class HomePage extends StatelessWidget {
                           "Login",
                           style: TextStyle(color: Colors.white, fontSize: 40),
                         )),
-                    SizedBox(height: 10),
+                    const SizedBox(height: 10),
                     FadeAnimation(
                       1.3,
-                      child: Text(
+                      child: const Text(
                         "Welcome Back",
                         style: TextStyle(color: Colors.white, fontSize: 20),
                       ),
@@ -62,12 +61,12 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Expanded(
                 child: FadeAnimation(
                   1.4,
                   child: Container(
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(60),
@@ -81,13 +80,13 @@ class HomePage extends StatelessWidget {
                           1.6,
                           child: Column(
                             children: <Widget>[
-                              SizedBox(height: 60),
+                              const SizedBox(height: 60),
                               Container(
-                                padding: EdgeInsets.all(20),
+                                padding: const EdgeInsets.all(20),
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(20),
-                                  boxShadow: [
+                                  boxShadow: const [
                                     BoxShadow(
                                       color: Color.fromRGBO(225, 95, 27, .3),
                                       blurRadius: 20,
@@ -98,7 +97,7 @@ class HomePage extends StatelessWidget {
                                 child: Column(
                                   children: <Widget>[
                                     Container(
-                                      padding: EdgeInsets.all(10),
+                                      padding: const EdgeInsets.all(10),
                                       decoration: BoxDecoration(
                                         border: Border(
                                           bottom: BorderSide(
@@ -118,7 +117,7 @@ class HomePage extends StatelessWidget {
                                       ),
                                     ),
                                     Container(
-                                      padding: EdgeInsets.all(10),
+                                      padding: const EdgeInsets.all(10),
                                       decoration: BoxDecoration(
                                         border: Border(
                                           bottom: BorderSide(
