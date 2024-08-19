@@ -4,7 +4,7 @@ class FadeAnimation extends StatelessWidget {
   final Widget child;
   final Duration duration;
 
-  FadeAnimation(int i, 
+  FadeAnimation(double i,
       {required this.child, this.duration = const Duration(milliseconds: 500)});
 
   @override
